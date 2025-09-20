@@ -17,6 +17,41 @@ body {
   padding: 0 20px;
 }
 
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #06b6d4, #0ea5e9); /* degrade azul */
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #0ea5e9, #06b6d4);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.btn_comprar {
+  display: inline-block;
+  background: linear-gradient(90deg, #000); /* degrade azul */
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-large {
+  font-size: 1.1rem;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero-content {
