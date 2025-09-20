@@ -1,0 +1,52 @@
+/* Pricing Section */
+.pricing-section {
+  padding: 80px 0;
+  text-align: center;
+  border-top-left-radius: 50% 15%;
+  border-top-right-radius: 50% 15%;
+  background-color: #06b6d4;
+}
+
+.section-title-pricing {
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.pricing-card img {
+  width: 50%;
+}
+
+#btn_comprar {
+  background-color: #000;
+}
+
+.old-price {
+  font-size: 1.5rem;
+  color: #94a3b8;
+  text-decoration: line-through;
+  margin-bottom: 20px;
+}
+
+.new-price {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #06b6d4;
+  margin-bottom: 20px;
+}
+
+.price-description {
+  color: #ffffff;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.btn-large {
+  font-size: 1.3rem;
+  padding: 20px 48px;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-top: 20px;
+}

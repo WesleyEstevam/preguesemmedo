@@ -1,0 +1,134 @@
+/* Method Section */
+.method-section {
+  padding: 80px 20px; /* adicionar padding lateral para mobile */
+  background-color: #000;
+}
+
+.method-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.method-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #06b6d4;
+  transform: translateX(-50%);
+}
+
+.method-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.method-item h3 {
+  color: #06b6d4;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.method-item p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+
+/* Tablets grandes e médios */
+@media (max-width: 992px) {
+  .method-content {
+    gap: 40px;
+  }
+
+  .method-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .method-item p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets pequenos / Landscape mobile */
+@media (max-width: 768px) {
+  .method-content {
+    grid-template-columns: 1fr; /* empilha colunas */
+  }
+
+  .method-content::before {
+    display: none; /* some com a linha divisória */
+  }
+
+  .method-column {
+    gap: 20px;
+  }
+
+  .method-item h3 {
+    font-size: 1.15rem;
+  }
+
+  .method-item p {
+    font-size: 0.95rem;
+  }
+
+  .method-section {
+    padding: 60px 15px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .method-section {
+    padding: 40px 10px;
+  }
+
+  .method-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .method-item p {
+    font-size: 0.9rem;
+  }
+
+  .method-column {
+    gap: 16px;
+  }
+
+  /* Logo central da seção Method */
+.method-section img {
+  max-width: 200px; /* tamanho padrão desktop */
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .method-section img {
+    max-width: 160px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .method-section img {
+    max-width: 140px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .method-section img {
+    max-width: 120px;
+  }
+}
+
+}

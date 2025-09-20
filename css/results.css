@@ -1,0 +1,92 @@
+/* Results Section */
+.results-section {
+  padding: 80px 20px;
+  border-top-left-radius: 100% 50%;
+  border-top-right-radius: 100% 50%;
+}
+
+/* Título centralizado */
+.results-section .section-title {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #06b6d4;
+}
+
+/* Grid de resultados */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr)); /* 2 por linha */
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+  justify-items: center;
+  align-items: start;
+}
+
+/* Card de resultado */
+.result-card {
+  border: 1px solid #06b6d4;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Texto do card */
+.result-card p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Responsividade */
+
+/* Tablets grandes */
+@media (max-width: 992px) {
+  .results-section .section-title {
+    font-size: 2.2rem;
+  }
+  .result-card p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets pequenos / landscape mobile */
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr; /* 1 coluna */
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .results-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 28px;
+  }
+  .result-card {
+    padding: 24px;
+  }
+  .result-card p {
+    font-size: 1rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .results-section {
+    padding: 60px 10px;
+  }
+  .results-section .section-title {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
+  .result-card {
+    padding: 20px;
+  }
+  .result-card p {
+    font-size: 0.95rem;
+  }
+}
